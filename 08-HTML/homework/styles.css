@@ -1,0 +1,16 @@
+h1 {
+    color: darkcyan;
+}
+img {
+    width: 400px;
+}
+#thirdDiv {
+    height: 600px;
+    width: 500px;
+    background-color: lightgray;
+    padding: 50px;
+    border: 5px solid darkgray;
+}
+#spanId {
+    font-size: 18px;
+}
