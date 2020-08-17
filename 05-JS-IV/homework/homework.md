@@ -1,16 +1,16 @@
 1. 
 
-* Objetos:
+* # Objetos:
 
     Yo describo al Objeto, como representaciones de conceptos realizadas por el desarrollador.
 
 
-* Propiedades:
+* # Propiedades:
 
     Las propiedades de los objetos, son caracteristicas de los mismos, que se almacenan como variables.
 
 
-* Métodos:
+* # Métodos:
 
     Los metodos de los objetos, son funciones contenidas dentro de los mismos, seria el equivalente a las acciones que pueden realizar estos conceptos.
 
@@ -46,7 +46,7 @@
     ```
 
 
-* Bucle `for…in`:
+* # Bucle `for…in`:
 
     Cuando se quiere recorrer todos los elementos del objeto ya sean propiedades o metodos se puede usar el loop `for…in` para acceder uno por uno a todos ellos, ya sea para modificarlos o acceder simplemente a ellos:
     ```javascript
@@ -67,7 +67,7 @@
     ```
 
 
-* Notación de puntos vs notación de corchetes
+* # Notación de puntos vs notación de corchetes
 
     La notacion de puntos y la notacion de corchetes hacen distintas cosas, pero la mejor forma de explicarlo es con ejemplos:
 
@@ -80,13 +80,13 @@
     ```
     Los siguientes llamados son identicos pero con distinta notacion
 
-    # Notacion de puntos:
+    ## Notacion de puntos:
     ```javascript
     > Console.log(objeto.propiedad); 
     < 'Soy una propiedad'
     ```
 
-    # Notacion de corchetes:
+    ## Notacion de corchetes:
     ```javascript
     > Console.log(objeto.["propiedad"]);
     < 'Soy una propiedad'
