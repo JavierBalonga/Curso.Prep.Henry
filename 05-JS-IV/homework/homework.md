@@ -80,13 +80,13 @@
     ```
     Los siguientes llamados son identicos pero con distinta notacion
 
-    Notacion de puntos:
+    # Notacion de puntos:
     ```javascript
     > Console.log(objeto.propiedad); 
     < 'Soy una propiedad'
     ```
 
-    Notacion de corchetes:
+    # Notacion de corchetes:
     ```javascript
     > Console.log(objeto.["propiedad"]);
     < 'Soy una propiedad'
@@ -94,8 +94,6 @@
 
 
     Con la notacion de corchetes puedo hacer lo sigiente, que es muy util
-
-    Notacion de corchetes:
     ```javascript
     let propiedad = "YoTambienSoyUnaPropiedad";
     > Console.log(objeto.[propiedad]);
@@ -105,7 +103,6 @@
 
 
     Pero esto seria un error:
-    Notacion de corchetes:
     ```javascript
     > Console.log(objeto.[YoTambienSoyUnaPropiedad]); 
     < Error
