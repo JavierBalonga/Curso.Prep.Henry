@@ -16,7 +16,9 @@
 
 
     Un ejemplo de todo esto podria ser el concepto de lo que es un gato:
+
     Se podria decir los gatos tienen un nombre, una edad, 4 patas, pelo, vigotes, y cuando lo acaricias dicen 'meow! n_n':
+
     Entonces bajo esa definicion de las caracteristicas de un gato yo podria definirlo en el codigo de la siguiente manera:
     ```javascript
     var gato = {
@@ -36,7 +38,8 @@
     * patas
     * pelo
     * vigotes
-    Y los el metodo de acariciarlo:
+
+    Y el metodo de acariciarlo:
     ```javascript
     > gato.acariciar();
     < 'meow! n_n'
@@ -67,34 +70,45 @@
 * Notación de puntos vs notación de corchetes
 
     La notacion de puntos y la notacion de corchetes hacen distintas cosas, pero la mejor forma de explicarlo es con ejemplos:
+
+    Supongamos el siguiente objeto:
     ```javascript
     var objeto = {
         propiedad: 'Soy una propiedad',
         YoTambienSoyUnaPropiedad: 'ajam tambien lo soy'
     }
-    //Los siguientes llamados son identicos pero con distinta notacion
-    //Notacion de puntos:
-    Console.log(objeto.propiedad); 
-    //'Soy una propiedad'
+    ```
+    Los siguientes llamados son identicos pero con distinta notacion
 
-    //Notacion de corchetes:
-    Console.log(objeto.["propiedad"]);
-    //'Soy una propiedad'
+    Notacion de puntos:
+    ```javascript
+    > Console.log(objeto.propiedad); 
+    < 'Soy una propiedad'
+    ```
+
+    Notacion de corchetes:
+    ```javascript
+    > Console.log(objeto.["propiedad"]);
+    < 'Soy una propiedad'
+    ```
 
 
-    //La notacion de corchetes puedo hacer lo sigiente, que es muy util
-    //Notacion de corchetes:
+    Con la notacion de corchetes puedo hacer lo sigiente, que es muy util
+
+    Notacion de corchetes:
+    ```javascript
     let propiedad = "YoTambienSoyUnaPropiedad";
-    Console.log(objeto.[propiedad]);
-    //'ajam tambien lo soy'
+    > Console.log(objeto.[propiedad]);
+    < 'ajam tambien lo soy'
+    ```
+    Lo que seria pasar entre los corchetes una variable previamente definida
 
-    //Lo que seria pasar una variable previamente definida entre los corchetes
 
-
-    //Sinembargo esto seria un error
-    //Notacion de corchetes:
-    Console.log(objeto.[YoTambienSoyUnaPropiedad]); 
-    //Error
-
-    //Porque en este caso YoTambienSoyUnaPropiedad es una variable que no se declaro
+    Pero esto seria un error:
+    Notacion de corchetes:
+    ```javascript
+    > Console.log(objeto.[YoTambienSoyUnaPropiedad]); 
+    < Error
+    ```
+    Porque en este caso YoTambienSoyUnaPropiedad es una variable que no se declaro o esta `undefined`
     ```
