@@ -108,4 +108,3 @@
     < Error
     ```
     Porque en este caso YoTambienSoyUnaPropiedad es una variable que no se declaro o esta `undefined`
-    ```
