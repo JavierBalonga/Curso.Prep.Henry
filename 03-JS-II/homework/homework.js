@@ -74,32 +74,15 @@ function esPrimo(numero) {
   // Pista: un número primo solo es divisible por sí mismo y por 1
   // Pista 2: Puedes resolverlo usando un bucle `for`
   // Nota: Los números 0 y 1 NO son considerados números primos
-  if (numero === 2) return true;
-  else if (numero === 3) return true;
-  else if (numero === 5) return true;
-  else if (numero === 7) return true;
-  else if (numero === 11) return true;
-  else if (numero === 13) return true;
-  else if (numero === 17) return true;
-  else if (numero === 19) return true;
-  else if (numero === 23) return true;
-  else if (numero === 29) return true;
-  else if (numero === 31) return true;
-  else if (numero === 37) return true;
-  else if (numero === 41) return true;
-  else if (numero === 43) return true;
-  else if (numero === 47) return true;
-  else if (numero === 53) return true;
-  else if (numero === 59) return true;
-  else if (numero === 61) return true;
-  else if (numero === 67) return true;
-  else if (numero === 71) return true;
-  else if (numero === 73) return true;
-  else if (numero === 79) return true;
-  else if (numero === 83) return true;
-  else if (numero === 89) return true;
-  else if (numero === 97) return true;
-  else return false;
+  if (numero < 0) numero = nuemro * -1;
+  if (numero === 0) return false;
+  if (numero === 1) return false;
+  for (i = 2; i < numero; i++) {
+    if (numero % i === 0) {
+      return false;
+    }
+  }
+  return true;
 }
 
 
